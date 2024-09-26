@@ -147,7 +147,7 @@ st.markdown(
 )
 
 # Display the logo at the top left corner using st.image
-logo_path = "/Users/bharathkarthick/Downloads/Ananda.png"
+logo_path = "https://github.com/Bharath0726/CryptoBot/blob/main/Pic/Ananda.png"
 st.image(logo_path, width=100)  # Adjust the width if needed
 
 # Initialize session state for chat history

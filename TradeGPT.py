@@ -16,7 +16,7 @@ load_dotenv()
 # groq_api_key=os.getenv("GROQ_API_KEY")
 
 # Set page title and favicon (Ananda logo)
-logo_path = "/Users/bharathkarthick/Downloads/Ananda.png"  # Replace with the path to your Ananda logo
+logo_path = "https://drive.google.com/file/d/1PLRH5BnwI4HN6XrxmY2LOBYzd-r_e-k8/view?usp=sharing"  # Replace with the path to your Ananda logo
 st.set_page_config(
     page_title="ChatBot",
     page_icon=logo_path  # Setting the favicon (logo) in the tab
@@ -147,7 +147,7 @@ st.markdown(
 )
 
 # Display the logo at the top left corner using st.image
-logo_path = "https://github.com/Bharath0726/CryptoBot/blob/main/Pic/Ananda.png"
+logo_path = "https://drive.google.com/file/d/1PLRH5BnwI4HN6XrxmY2LOBYzd-r_e-k8/view?usp=sharing"
 st.image(logo_path, width=100)  # Adjust the width if needed
 
 # Initialize session state for chat history

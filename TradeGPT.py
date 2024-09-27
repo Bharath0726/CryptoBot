@@ -22,9 +22,6 @@ st.set_page_config(
     page_icon=logo_path  # Setting the favicon (logo) in the tab
 )
 
-# Display the logo using the URL
-st.image(logo_path, width=100)  # Adjust the width if needed
-
 # Access the secrets via st.secrets
 groq_api_key = st.secrets["GROQ_API_KEY"]
 hf_token = st.secrets["HF_TOKEN"]
@@ -68,6 +65,11 @@ def create_vector_embedding():
         st.session_state.vectors=FAISS.from_documents(st.session_state.final_documents,st.session_state.embeddings)
 
 # Inject CSS with base64 background image
+st.markdown(f"""
+    <img src="{logo_url}" alt="Ananda Logo" width="100">
+""", unsafe_allow_html=True)
+
+
 st.markdown(
     """
     <style>

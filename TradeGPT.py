@@ -22,6 +22,9 @@ st.set_page_config(
     page_icon=logo_path  # Setting the favicon (logo) in the tab
 )
 
+# Display the logo using the URL
+st.image(logo_path, width=100)  # Adjust the width if needed
+
 # Access the secrets via st.secrets
 groq_api_key = st.secrets["GROQ_API_KEY"]
 hf_token = st.secrets["HF_TOKEN"]

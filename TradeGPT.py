@@ -160,9 +160,9 @@ st.title("Master Crypto with ANANDA")
 
 user_prompt=st.text_input("Message Ananda")
 
-if st.button("Document Embedding"):
+if st.button("Node Activate"):
     create_vector_embedding()
-    st.write("I'm ready")
+    st.write("I'm Ananda! Here to teach you all about CryptoWorld,Ask away!")
 
 import time
 

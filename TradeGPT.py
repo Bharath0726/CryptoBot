@@ -148,7 +148,7 @@ st.markdown(
 )
 
 # Display the logo at the top left corner using st.image
-logo_path = "https://drive.google.com/uc?export=view&id=1PLRH5BnwI4HN6XrxmY2LOBYzd-r_e-k8"
+logo_path = "https://ananda.exchange/wp-content/uploads/2022/03/cropped-Fondos-y-recursos-20.png"
 st.image(logo_path, width=100)  # Adjust the width if needed
 
 # Initialize session state for chat history

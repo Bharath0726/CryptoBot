@@ -28,6 +28,9 @@ hf_token = st.secrets["HF_TOKEN"]
 langchain_api_key = st.secrets["LANGCHAIN_API_KEY"]
 langchain_project = st.secrets["LANGCHAIN_PROJECT"]
 
+# Set environment variables for Langchain
+os.environ["LANGCHAIN_API_KEY"] = langchain_api_key
+os.environ["LANGCHAIN_PROJECT"] = langchain_project
 
 # ## Langsmith Tracking
 # os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")

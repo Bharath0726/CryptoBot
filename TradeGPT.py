@@ -31,13 +31,13 @@ langchain_project = st.secrets["LANGCHAIN_PROJECT"]
 # Set environment variables for Langchain
 os.environ["LANGCHAIN_API_KEY"] = langchain_api_key
 os.environ["LANGCHAIN_PROJECT"] = langchain_project
+os.environ["LANGCHAIN_TRACING_V2"]="true"
 
 # ## Langsmith Tracking
 # os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 # os.environ["LANGCHAIN_TRACING_V2"]="true"
 # os.environ["LANGCHAIN_PROJECT"]=os.getenv("LANGCHAIN_PROJECT")
 
-## If you do not have open AI key use the below Huggingface embedding
 #os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
 from langchain_huggingface import HuggingFaceEmbeddings
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")

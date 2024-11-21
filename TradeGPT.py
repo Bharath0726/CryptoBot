@@ -38,17 +38,12 @@ llm_llama3 = ChatGroq(groq_api_key=groq_api_key, model_name="llama3-8b-8192")
 # Create chain for Llama 3B LLM
 prompt_template = ChatPromptTemplate.from_template(
     """
-    Answer the questions based on the provided context
-    As an expert in the insurance industry with comprehensive knowledge of various insurance products, 
-    I will recommend the best options for your needs. If your question is not related to insurance, I will let you know.
-
+    You're expert in the field of all kinds of insurance, answer question only related to that
+    if it is not there, try to give a geneic answer.
     <context>
     {context}
     <context>
     Question: {input}
-
-    If the question is unrelated to insurance, respond with: 
-    "I specialize in insurance and cannot provide answers on this topic."
     """
 )
 
